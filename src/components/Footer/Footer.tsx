@@ -27,7 +27,7 @@ export const Footer: React.FC = () => {
               </a>
             </li>
             <li>
-              <a href="https://kitchen.lumistem.org" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
+              <a href="https://demo.maker.lumistem.org" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
                 LumiSTEM Kitchen
               </a>
             </li>

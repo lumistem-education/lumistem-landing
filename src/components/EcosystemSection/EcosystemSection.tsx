@@ -104,7 +104,7 @@ export const EcosystemSection: React.FC = () => {
               <div className="pt-5 mt-6 border-t border-gray-100 flex items-center justify-between">
                 <span className="text-xs sm:text-sm text-gray-500 font-medium">kitchen.lumistem.org</span>
                 <a
-                  href="https://kitchen.lumistem.org"
+                  href="https://demo.maker.lumistem.org"
                   target="_blank"
                   rel="noreferrer"
                   className="liquid-btn-primary !py-2.5 !px-5 !text-sm !font-bold"
