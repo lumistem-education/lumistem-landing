@@ -1,0 +1,18 @@
+.cta-content {
+    text-align: center;
+}
+
+.cta-section {
+    position: relative;
+    z-index: 10;
+    max-width: 64rem;
+    margin-inline: auto;
+    padding: 6rem 1rem;
+    scroll-margin-top: 8rem;
+}
+
+@media (min-width: 640px) {
+    .cta-section {
+        padding-inline: 1.5rem;
+    }
+}

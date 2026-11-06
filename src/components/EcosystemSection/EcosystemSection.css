@@ -1,0 +1,54 @@
+.ecosystem-heading {
+    max-width: 64rem;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.ecosystem-heading h2 {
+    margin-bottom: 1rem;
+    color: #111827;
+    font-size: clamp(2.25rem, 4.5vw, 3.75rem);
+}
+
+.ecosystem-heading p {
+    max-width: 52rem;
+    margin-inline: auto;
+    color: #4b5563;
+    font-size: 1.125rem;
+    line-height: 1.7;
+}
+
+.ecosystem-feature-list {
+    padding-left: 1.75rem;
+    list-style: disc outside;
+}
+
+.ecosystem-feature-list li {
+    padding-left: 0.25rem;
+}
+
+.ecosystem-feature-list li + li {
+    margin-top: 0.625rem;
+}
+
+.connector-action {
+    width: 100%;
+    max-width: 16rem;
+    height: 44px;
+    justify-content: center;
+}
+
+.ecosystem-section {
+    position: relative;
+    z-index: 10;
+    max-width: 72rem;
+    margin-inline: auto;
+    padding: 6rem 1rem;
+    scroll-margin-top: 8rem;
+}
+
+@media (min-width: 640px) {
+    .ecosystem-section {
+        padding-inline: 1.5rem;
+    }
+}

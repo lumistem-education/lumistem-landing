@@ -1,0 +1,10 @@
+node_modules/
+dist/
+package-lock.json
+flake.lock
+src/assets/
+public/
+.env*
+.agents/
+.codex/
+.aws/

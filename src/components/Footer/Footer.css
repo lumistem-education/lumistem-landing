@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'VAG Rounded';
+    src: url('../../assets/fonts/vag-rounded/iCielVAGRoundedNextShine-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.footer-wordmark {
+    display: block;
+    align-self: flex-start;
+    color: #fff;
+    font-family: 'VAG Rounded', sans-serif;
+    font-size: clamp(2.5rem, 4vw, 3.25rem);
+    font-weight: 400;
+    line-height: 0.8;
+    text-decoration: none;
+}
+
+.footer-wordmark:focus-visible {
+    outline: 2px solid #ffd600;
+    outline-offset: 6px;
+    border-radius: 4px;
+}
+
+.site-footer {
+    position: relative;
+    z-index: 10;
+    border-top: 1px solid rgb(255 255 255 / 8%);
+    background: #0a0a0a;
+    color: #a3a3a3;
+    padding: 2rem 1rem 1.5rem;
+}
+
+.footer-socials {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px 14px;
+}
+
+.footer-social-icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #e5e5e5;
+}
+
+.footer-social-icons svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.footer-social-icons a {
+    padding: 4px;
+    border-radius: 4px;
+    transition: color 0.2s ease;
+}
+
+.footer-social-icons a:hover {
+    color: #fff;
+}
+
+.footer-social-icons a:focus-visible {
+    outline: 2px solid #ffd600;
+    outline-offset: 3px;
+}
+
+@media (min-width: 640px) {
+    .site-footer {
+        padding-inline: 1.5rem;
+    }
+}

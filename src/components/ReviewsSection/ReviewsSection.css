@@ -1,0 +1,106 @@
+.reviews-section {
+    position: relative;
+    z-index: 10;
+    padding-block: 6rem;
+    scroll-margin-top: 8rem;
+}
+
+.reviews-heading {
+    max-width: 56rem;
+    margin: 0 auto 2.5rem;
+    padding-inline: 1.5rem;
+    text-align: center;
+}
+
+.reviews-heading h2 {
+    color: #111827;
+    font-size: clamp(2.25rem, 4.5vw, 3.75rem);
+}
+
+.reviews-heading > p {
+    margin-top: 1.25rem;
+    color: #4b5563;
+    font-size: 1.125rem;
+    line-height: 1.7;
+}
+
+.reviews-marquee {
+    overflow: hidden;
+    padding-block: 1rem 2rem;
+    mask-image: linear-gradient(to right, transparent, #000 22%, #000 78%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 22%, #000 78%, transparent);
+}
+
+.reviews-track {
+    display: flex;
+    width: max-content;
+    animation: reviews-scroll 65s linear infinite;
+}
+
+.reviews-group {
+    display: flex;
+    align-items: stretch;
+    flex-shrink: 0;
+    gap: 1.5rem;
+    padding-right: 1.5rem;
+    list-style: none;
+}
+
+.reviews-group > li {
+    width: clamp(280px, 30vw, 360px);
+    flex-shrink: 0;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    min-height: 240px;
+    padding: 1.75rem;
+}
+
+.review-quote-icon {
+    flex-shrink: 0;
+    margin-bottom: 1.25rem;
+    color: #a16207;
+}
+
+.review-card blockquote {
+    flex: 1;
+    font-style: italic;
+    color: #374151;
+    font-size: 1rem;
+    line-height: 1.85;
+}
+
+.reviews-marquee:hover .reviews-track,
+.reviews-marquee:focus-within .reviews-track {
+    animation-play-state: paused;
+}
+
+.reviews-marquee:focus-visible {
+    outline: 2px solid #a16207;
+    outline-offset: -2px;
+}
+
+@keyframes reviews-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reviews-marquee {
+        overflow-x: auto;
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+
+    .reviews-track {
+        animation: none;
+    }
+
+    .reviews-group[aria-hidden='true'] {
+        display: none;
+    }
+}
